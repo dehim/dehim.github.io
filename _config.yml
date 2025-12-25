@@ -10,10 +10,12 @@
 ############################
 
 # Name of website
-title: My website
+title: "Dehim 的博客"
+
+subtitle: "记录 · 笔记 · 思考"
 
 # Your name to show in the footer
-author: Some Person
+author: "Dehim"
 
 ###############################################
 # --- List of links in the navigation bar --- #
