@@ -1,16 +1,15 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: 关于本站
+subtitle: 一个轻量静态网页小游戏集合
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+这里是 Dehim 的静态网页小游戏集合站。目标很简单：打开页面就能玩，不需要登录，不需要安装，也不需要额外下载大型资源。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+当前第一阶段先上线一个纯前端贪吃蛇小游戏，用来验证 GitHub Pages、Jekyll 页面结构、移动端适配和基础游戏交互。
 
-What else do you need?
+后续可以继续加入更多轻量游戏，例如接星星、2048、记忆翻牌、扫雷或迷你解谜。
 
-### My story
+### 技术边界
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+本站继续保留 Jekyll 和 Beautiful Jekyll 的 GitHub Pages 构建链。游戏本身使用普通 HTML、CSS 和 JavaScript 编写，尽量保持结构简单、可直接托管。
