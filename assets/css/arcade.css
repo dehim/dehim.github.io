@@ -1,0 +1,199 @@
+.arcade-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.arcade-hero {
+  margin: 0 auto 48px;
+  padding: 72px 0;
+  color: #f9fbff;
+  background:
+    linear-gradient(135deg, rgba(22, 36, 66, 0.94), rgba(8, 15, 30, 0.96)),
+    radial-gradient(circle at 78% 24%, rgba(90, 219, 167, 0.28), transparent 30%),
+    #111827;
+}
+
+.arcade-kicker {
+  margin: 0 0 12px;
+  color: #3bbf8f;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.arcade-hero h2,
+.arcade-section-heading h2 {
+  margin: 0;
+  color: inherit;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.arcade-hero h2 {
+  max-width: 760px;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.08;
+}
+
+.arcade-intro {
+  max-width: 720px;
+  margin: 22px 0 0;
+  color: rgba(249, 251, 255, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.arcade-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.arcade-button,
+.game-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 2px solid #2f9e76;
+  border-radius: 8px;
+  background: #2f9e76;
+  color: #ffffff;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.arcade-button:hover,
+.game-link:hover {
+  color: #ffffff;
+  background: #267d61;
+  border-color: #267d61;
+  text-decoration: none;
+}
+
+.arcade-button-secondary {
+  background: transparent;
+  color: #f9fbff;
+  border-color: rgba(249, 251, 255, 0.42);
+}
+
+.arcade-button-secondary:hover {
+  color: #111827;
+  background: #f9fbff;
+  border-color: #f9fbff;
+}
+
+.arcade-section {
+  margin-bottom: 64px;
+}
+
+.arcade-section-heading {
+  margin-bottom: 20px;
+}
+
+.arcade-section-heading h2 {
+  color: #172033;
+  font-size: 1.8rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  overflow: hidden;
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+}
+
+.game-card-media {
+  position: relative;
+  min-height: 180px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    #182235;
+  background-size: 24px 24px;
+}
+
+.snake-dot,
+.snake-food {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+
+.snake-dot {
+  background: #54d68f;
+}
+
+.snake-dot-one {
+  left: 72px;
+  top: 72px;
+}
+
+.snake-dot-two {
+  left: 100px;
+  top: 72px;
+}
+
+.snake-dot-three {
+  left: 128px;
+  top: 72px;
+}
+
+.snake-food {
+  right: 74px;
+  top: 74px;
+  background: #f45b69;
+  border-radius: 50%;
+}
+
+.game-card-body {
+  padding: 22px;
+}
+
+.game-tag {
+  margin: 0 0 8px;
+  color: #2f9e76;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.game-card h3 {
+  margin: 0 0 10px;
+  color: #172033;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.game-card p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .arcade-shell {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .arcade-hero {
+    padding: 48px 0;
+  }
+
+  .arcade-button,
+  .game-link {
+    width: 100%;
+  }
+}

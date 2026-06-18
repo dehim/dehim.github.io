@@ -1,5 +1,49 @@
 ---
-layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+layout: page
+title: Dehim 小游戏
+subtitle: 轻量、即开即玩的静态网页小游戏集合
+full-width: true
+css:
+  - "/assets/css/arcade.css"
 ---
+
+<section class="arcade-hero" aria-labelledby="arcade-title">
+  <div class="arcade-shell">
+    <p class="arcade-kicker">Static Web Games</p>
+    <h2 id="arcade-title">打开浏览器，马上开一局。</h2>
+    <p class="arcade-intro">
+      这里收集一些不用登录、不用安装、适合桌面和手机浏览器的轻量小游戏。
+      第一阶段先从经典贪吃蛇开始，后续可以逐步加入反应、解谜和休闲类游戏。
+    </p>
+    <div class="arcade-actions">
+      <a class="arcade-button" href="{{ '/games/snake/' | relative_url }}">开始玩贪吃蛇</a>
+      <a class="arcade-button arcade-button-secondary" href="{{ '/aboutme' | relative_url }}">了解这个站点</a>
+    </div>
+  </div>
+</section>
+
+<section class="arcade-shell arcade-section" aria-labelledby="games-title">
+  <div class="arcade-section-heading">
+    <p class="arcade-kicker">Games</p>
+    <h2 id="games-title">小游戏列表</h2>
+  </div>
+
+  <div class="game-grid">
+    <article class="game-card">
+      <div class="game-card-media" aria-hidden="true">
+        <span class="snake-dot snake-dot-one"></span>
+        <span class="snake-dot snake-dot-two"></span>
+        <span class="snake-dot snake-dot-three"></span>
+        <span class="snake-food"></span>
+      </div>
+      <div class="game-card-body">
+        <p class="game-tag">经典 · 反应</p>
+        <h3>贪吃蛇</h3>
+        <p>
+          用方向键或屏幕按钮控制小蛇吃到食物，躲开墙壁和自己的身体，挑战最高分。
+        </p>
+        <a class="game-link" href="{{ '/games/snake/' | relative_url }}">进入游戏</a>
+      </div>
+    </article>
+  </div>
+</section>
